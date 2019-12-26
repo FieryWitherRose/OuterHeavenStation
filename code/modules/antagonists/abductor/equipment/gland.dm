@@ -79,9 +79,17 @@
 		uses = initial(uses)
 	var/datum/atom_hud/abductor/hud = GLOB.huds[DATA_HUD_ABDUCTOR]
 	hud.remove_from_hud(owner)
-	owner?.mind?.remove_antag_datum(/datum/antagonist/abductee)
+	if(owner?.mind?.has_antag_datum(/datum/antagonist/abductee)
+		owner.mind.remove_antag_datum(/datum/antagonist/abductee)
+		to_chat(owner, "<span class='userdanger'>You feel your mind healing at last as the enzymes of the foreign gland are flushed from your system, your mind-snap directives now null and void.</span>")
 	clear_mind_control()
 	..()
+
+/obj/item/organ/heart/gland/on_death()
+	if(owner?.mind?.has_antag_datum(/datum/antagonist/abductee)
+		owner.mind.remove_antag_datum(/datum/antagonist/abductee)
+		to_chat(owner, "<span class='userdanger'>Your mind snaps back to normal as your vital signs cease, at a terrible cost..</span>")
+	return ..()
 
 /obj/item/organ/heart/gland/Insert(mob/living/carbon/M, special = 0, drop_if_replaced = TRUE)
 	..()
