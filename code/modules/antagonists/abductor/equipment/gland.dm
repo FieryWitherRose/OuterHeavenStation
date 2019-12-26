@@ -79,6 +79,7 @@
 		uses = initial(uses)
 	var/datum/atom_hud/abductor/hud = GLOB.huds[DATA_HUD_ABDUCTOR]
 	hud.remove_from_hud(owner)
+	owner?.mind?.remove_antag_datum(/datum/antagonist/abductee)
 	clear_mind_control()
 	..()
 
