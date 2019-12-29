@@ -1,5 +1,7 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Blackjack and Hookers!</h1>
+<h1>Welcome to Outer Heaven Station;
+
+You are a member of an independent micronation, based on a formerly abandoned NT station. Your job is simple; survive and assist your fellow crew members in surviving, and keep both the megacorporations and governments from oppressing your freedom.</h1>
 
 <i>This server is running a Citadel Station 13 Git build.</i>
