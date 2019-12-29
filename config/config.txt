@@ -234,22 +234,22 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-# FORUMURL https://citadel-station.net/forum/
+# FORUMURL WIP
 
 ## Wiki address
-# WIKIURL https://katlin.dog/citadel-wiki
+# WIKIURL https://katlin.dog/-wiki
 
 ## Rules address
-# RULESURL https://katlin.dog/citadel-rules/main
+# RULESURL N/A
 
 ## Github address
-# GITHUBURL https://github.com/Citadel-Station-13/Citadel-Station-13
+# GITHUBURL https://github.com/FieryWitherRose/OuterHeavenStation
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()
 ## This will take priority over the game logs address during reboot.
 ## Example: https://atlantaned.space/statbus/round.php?round=
-# ROUNDSTATSURL http://citadel-station.net/slimbus/
+# ROUNDSTATSURL n/a
 
 ## Game Logs address
 ## Incase you don't have a fancy parsing system, but still want players to be able to find where you keep your server's logs.
@@ -262,7 +262,7 @@ CHECK_RANDOMIZER
 # GITHUBREPOID 62485194
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
-# BANAPPEALS https://citadel-station.net/forum/viewforum.php?f=8&sid=a0ce5331d5594ef6d49661609c6f4ff9
+# BANAPPEALS https://discord.gg/YUHCHcS
 
 ## System command that invokes youtube-dl, used by Play Internet Sound.
 ## You can install youtube-dl with
@@ -372,7 +372,7 @@ ANNOUNCE_ADMIN_LOGOUT
 MAPROTATION
 
 ## TG-style map rotation
-## By default, Citadel uses a more traditional method of map voting, where at the end of a round, players are given a full upfront vote.
+## By default, OHS uses a more traditional method of map voting, where at the end of a round, players are given a full upfront vote.
 ## This PR will disable that, and will make the server use TG's map rotation instead.
 #TGSTYLE_MAPROTATION
 
